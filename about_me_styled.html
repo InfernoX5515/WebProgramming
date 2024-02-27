@@ -16,7 +16,8 @@
             body {
                 margin: 0;
                 background-color: #684455;
-                color: #fff
+                color: #fff;
+                overflow-x: hidden;
             }
             
             h1, h2, h3 {
@@ -28,6 +29,21 @@
                 height: 2.5em;
                 line-height: 2.5;
                 font-size: 2.5em;
+                margin: 0;
+                padding: 0.5em;
+                background-color: #000c27;
+            }
+            
+            h2 {
+                font-weight: normal;
+                font-size: 2em;
+            }
+            
+            h3 {
+                font-weight: normal;
+                text-decoration: underline;
+                color: #eddbe0;
+                font-size: 1.5em
             }
             
             p {
@@ -43,7 +59,6 @@
                 padding: 1em;
                 background-color: #dcf3ff;
                 margin: 0;
-                width: 100%;
                 color: #000
             }
             
@@ -57,6 +72,7 @@
                 display: inline-block;
                 width: 60%;
                 padding-left: 2em;
+                height: auto
             }
             
             #projects {
@@ -64,14 +80,43 @@
             }
             
             .project {
-                
+                margin: 3em;
+                border-bottom: 1px solid #000
+            }
+            
+            .project p {
+                font-weight: 300;
+                display: inline-block;
+                margin-bottom: 3em;
+            }
+            
+            .project img {
+                display: inline-block;
+                margin-bottom: 3em;
+            }
+            
+            #hobbies {
+                background-color: rgb(0 12 39 / 17%);
+                margin: 0.5em;
+                padding: 0.5em;
+                font-weight: 300;
+            }
+            
+            .imgs img {
+                margin: 2em;
+                height: 20vw;
+            }
+            
+            .imgs {
+                display: flex;
+                justify-content: center;
             }
             
         </style>
     </head>
     
     <body>
-        <h1>About Me</h1>
+        <h1>━ &ensp; About Me &ensp; ━</h1>
         
         <!-- INTRO -->
         <div id="intro">
@@ -93,16 +138,16 @@
                     contractors. I also manage, document, and maintain, CPRA banners on all PSG Sherwin domains.</p>
             </div>
             
-            <div class="project">
-                <h3>Spatial-Social Networks Research</h3>
-                <p>Location-based social networks have grown in size and popularity in the past two decades due to their 
+            <div class="project" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                <h3 style="flex-basis: 50%;">Spatial-Social Networks Research</h3>
+                <p style="width:50%; margin-right: 5em;">Location-based social networks have grown in size and popularity in the past two decades due to their 
                     real-world versatility. In such networks, it is important to create a spatial-social network that 
                     not only looks into personal relationships among users but also their geographical closeness on road 
                     networks. This research focuses on creating a system to analyze and query such networks.</p>
-                <img src="Assets/Images/ssn.jpg" height="300">
+                <img src="Assets/Images/ssn.jpg" style="height:20vw">
             </div>
             
-            <div class="project">
+            <div class="project" style="border: none">
                 <h3>KSU Ticketing System Data Transfer</h3>
                 <p>This project aimed at creating a data export of open service tickets, reformat the export, and import 
                     the data to a new ticketing system. A python script was created to work with the ticketing system 
@@ -117,9 +162,14 @@
             <p>In my free time, I enjoy fish and reptile keeping and (unsurprisingly) programming. I currently have 
                 13 aquariums, a gecko, and two cats in my small apartment. I also foster cats with the Portage 
                 APL and have asisted with rehabilitating and finding over 20 cats their forever homes.</p>
-            <img src="Assets/Images/cats.jpg" height="300">
-            <img src="Assets/Images/fish.jpg" height="300">
+            <div class="imgs">
+                <img src="Assets/Images/cats.jpg">
+                <img src="Assets/Images/fish.jpg">
+                <img src="Assets/Images/axolotls.jpg">
+                <img src="Assets/Images/gecko.jpg">
+            </div>
         </div>
+        
         
     </body>
 </html>
